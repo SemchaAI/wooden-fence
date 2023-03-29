@@ -64,7 +64,6 @@ h6{
     display: flex;
     margin: 0 auto ;
 
-    min-height: 680px;  /* temporar */
     max-width: 1440px;
 }
 .container {
@@ -127,6 +126,7 @@ h6{
 }
 .phoneWrapper{
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 .phoneImg {
@@ -189,18 +189,30 @@ h6{
     color: var(--white);
 }
 .slider {
-    width: 372px;
+    width: 371px;
     background: linear-gradient(0deg, rgba(72, 91, 71, 0.8), rgba(72, 91, 71, 0.8)), url(./images/WoodTexture.png);
     background-repeat: no-repeat;
     background-position: center;
+
+    overflow: hidden;
 }
 .sliderList {
     display: flex;
     gap: 16px;
     margin: 32px 0 0 13px;
 }
+.sliderLine {
+    width: 1855px;
+    height: 473px;
+    display: flex;
+    position: relative;
+    transition: all ease 1s;
+}
+.sliderPage {
+    width: 371px;
+    height: 473px;
+}
 .dot{
-   
     width: 11px;
     height: 11px;
     border-radius: 5px;
@@ -413,6 +425,10 @@ h6{
         display: flex;
         flex-direction: column;
 
+        background: linear-gradient(0deg, rgba(33, 50, 32, 0.7),
+         rgba(33, 50, 32, 0.7)),
+         url(./images/WoodTexture.png);
+
         width: 320px;
         height: 392px;
         position: relative;
@@ -426,6 +442,14 @@ h6{
         margin: 60px 118px 15px 117px;
 
         gap: 11px;
+    }
+    .sliderLine {
+        width: 1600px;
+        height:392px;
+    }
+    .sliderPage {
+        width: 320px;
+        height: 392px;
     }
     .dot {
         width: 8px;
@@ -485,8 +509,154 @@ h6{
     }
     
 }
-
-
 /* Main */
 
+/* First section */
 
+.advantages {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    margin: 71px auto 0 auto;
+    max-width: 1440px;
+
+    color: var(--dark);
+}
+.advantages::before {
+    content: '';
+    width: 96px;
+    height: 83px;
+    position: absolute;
+    background-image: url(./images/DotsUnion.png);
+    background-size: 96px 83px;
+    left: 0;
+    top: 0;
+}
+.advantages::after {
+    content: '';
+    width: 96px;
+    height: 83px;
+    position: absolute;
+    background-image: url(./images/DotsUnion.png);
+    background-size: 96px 83px;
+    right: 0;
+    bottom: 0;
+}
+.advantagesTitle {
+    display: flex;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+}
+.advantagesTitle::before {
+    content: '';
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-image: url(./images/logoSlime.png);
+    background-size: 32px 32px;
+    left: 476px;
+    top: -10px;
+    z-index: -1;
+}
+.advantagesText{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 15px;
+
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+}
+.advantagesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    min-width: 941px;
+
+    margin: 56px auto 88px auto;
+}
+.advantagesContainer img {
+    width: 76px;
+    height: 86px;
+
+    align-self: center;
+}
+.advantage {
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+.advantageText{
+
+    margin-top: 35px;
+
+}
+
+@media (width<= 320px) {
+    .advantages {
+        margin: 28px 36px;
+    }
+    .advantages::before {
+        width: 34px;
+        height: 29px;
+        background-size: 34px 29px;
+        left: -34px;
+        top: 103px;
+    }
+    .advantages::after {
+        width: 34px;
+        height: 29px;
+        background-size: 34px 29px;
+        right: -36px;
+    }
+    .advantagesTitle {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .advantagesTitle::before {
+        width: 14px;
+        height: 14px;
+        background-size: 14px 14px;
+        left: -11px;
+        top: 2px;
+        z-index: -1;
+    }
+    .advantagesText{
+        
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .advantagesContainer {
+        margin-top: 31px;
+        margin-bottom: 32px;
+        min-width: 242px;
+        gap: 27px;
+    }
+    .advantagesContainer img {
+        width: 41px;
+        height: 46px;
+    }
+    .advantage {
+    
+    }
+    .advantageText{
+        margin-top: 16px;
+
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
