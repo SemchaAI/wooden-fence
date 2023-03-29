@@ -301,7 +301,7 @@ h6{
 
 /* Header media */
 
-@media (width <= 320px) {
+@media (width <= 767px) {
     .header {
         flex-direction: column;
     }
@@ -400,6 +400,8 @@ h6{
     
    }
     .sloganWrapper{
+        margin: 0 auto;
+
         width: 320px;
         height: 180px;
         
@@ -424,6 +426,8 @@ h6{
     .slider {
         display: flex;
         flex-direction: column;
+
+        margin: 0 auto;
 
         background: linear-gradient(0deg, rgba(33, 50, 32, 0.7),
          rgba(33, 50, 32, 0.7)),
@@ -512,6 +516,10 @@ h6{
 /* Main */
 
 /* First section */
+.main{
+    margin: 0 auto;
+    max-width: 1440px;
+}
 
 .advantages {
     display: flex;
@@ -604,9 +612,14 @@ h6{
 
 }
 
-@media (width<= 320px) {
+@media (width<= 767px) {
+    .main{
+        margin: 0 auto;
+        max-width: 320px;
+    }
     .advantages {
         margin: 28px 36px;
+        max-width: 320px;
     }
     .advantages::before {
         width: 34px;
