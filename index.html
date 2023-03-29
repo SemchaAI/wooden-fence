@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+
+    <title>Заборы</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="bar">
+          <div class="logo">
+            <img src="./images/logo.png" alt="logo" />
+            <p class="logoText">
+              LOGO<br />
+              company
+            </p>
+          </div>
+          <nav class="nav" id="nav">
+            <ul class="navigationPages">
+              <li class="page"><a href="#">Каталог</a></li>
+              <li class="page"><a href="#">Доставка</a></li>
+              <li class="page"><a href="#">Оплата</a></li>
+              <li class="page"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="phone" id="phone">
+            <div class="phoneWrapper">
+              <img
+                class="phoneImg"
+                src="./images/phoneHeader.svg"
+                alt="phone"
+              />
+              <p class="phoneNumber">8 800 888 88 88</p>
+            </div>
+            <button class="phoneBtn">Заказать звонок</button>
+          </div>
+          <div class="burgerContainer">
+            <button class="burgerButton" onclick="toggleClass()">Open</button>
+            <span>
+              <span class="burgerBar"></span>
+              <span class="burgerBar"></span>
+              <span class="burgerBar"></span>
+            </span>
+          </div>
+        </div>
+        <div class="sloganWrapper">
+          <h1 class="slogan">
+            Установка ограждений и заборов <br />из древесины высокого качества
+          </h1>
+        </div>
+      </div>
+      <div class="slider">
+        <ul class="sliderList">
+          <li><div class="dot currentDot"></div></li>
+          <li><div class="dot"></div></li>
+          <li><div class="dot"></div></li>
+          <li><div class="dot"></div></li>
+          <li><div class="dot"></div></li>
+        </ul>
+        <div class="SliderBtns">
+          <button class="sliderBtn">
+            <img src="./images/btnL.svg" alt="на предыдущий слайд" />
+          </button>
+          <button class="sliderBtn">
+            <img src="./images/btnR.svg" alt="на следующий слайд" />
+          </button>
+        </div>
+        <img
+          class="sliderImg"
+          src="./images/sliderSpruce.jpg"
+          alt="Деревянный забор Ёлочка"
+        />
+        <div class="sliderInfo">
+          <div class="sliderInfoWrapper">
+            <h3 class="sliderTitle">Деревянный забор “Ёлочка”</h3>
+            <p class="sliderDesc">
+              Ёлочка относится к горизонтальному типу заборов, то есть доски
+              кладутся параллельно поверхности земли. Своё название она получила
+              по понятной причине: в профиль напоминает елку с детского рисунка.
+            </p>
+          </div>
+          <button class="sliderOrderBtn">заказать</button>
+        </div>
+      </div>
+      <!-- <div class="dot"></div> -->
+    </header>
+    <main></main>
+    <footer></footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
