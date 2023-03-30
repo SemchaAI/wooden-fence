@@ -58,21 +58,36 @@ h6{
     display:  none !important;
 }
 
+/* Animations */
+
+@keyframes fall-down {
+    from {
+        opacity: 0;
+        transform: translateY(-400px);
+}
+
+    to {
+        opacity: 1;
+        transform : translateY(0);
+    }
+}
+
+
+
 /* Header */
 
 .header {
     display: flex;
     margin: 0 auto ;
 
-    max-width: 1440px;
+    /* max-width: 1440px; */
 }
 .container {
- min-width: 1069px;
- background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/banner.png);
- background-size: cover;
- background-repeat: no-repeat;
- background-position: center;
-
+    width: 70%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./assets/images/header/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
 }
 .bar {
     display: flex;
@@ -123,6 +138,7 @@ h6{
     display: flex;
     align-items: center;
     gap: 10px;
+    
 }
 .phoneWrapper{
     display: flex;
@@ -136,6 +152,8 @@ h6{
 .phoneNumber {
     font-size: 20px;
     line-height: 27px;
+
+    color: var(--dark);
 }
 .phoneBtn{
     display:  none;
@@ -189,10 +207,11 @@ h6{
     color: var(--white);
 }
 .slider {
-    width: 371px;
-    background: linear-gradient(0deg, rgba(72, 91, 71, 0.8), rgba(72, 91, 71, 0.8)), url(./images/WoodTexture.png);
+    width: 30%;
+    background: linear-gradient(0deg, rgba(72, 91, 71, 0.8), rgba(72, 91, 71, 0.8)), url(./assets/images/header/WoodTexture.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
     overflow: hidden;
 }
@@ -202,14 +221,14 @@ h6{
     margin: 32px 0 0 13px;
 }
 .sliderLine {
-    width: 1855px;
+    width: 500%;
     height: 473px;
     display: flex;
     position: relative;
     transition: all ease 1s;
 }
 .sliderPage {
-    width: 371px;
+    width: 30%;
     height: 473px;
 }
 .dot{
@@ -218,7 +237,7 @@ h6{
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.5);
 }
-.currentDot {
+.activeDot {
     background-color: var(--white);
     box-shadow: 0 0 0 3px  var(--dark-green), 0 0 0 4px var(--white);
 }
@@ -268,7 +287,7 @@ h6{
     left: 0px;
     top: 34px;
 
-    background-image: url(./images/yellowSnake.svg);
+    background-image: url(./assets/images/header/yellowSnake.svg);
 }
 
 .sliderDesc {
@@ -279,7 +298,7 @@ h6{
     line-height: 20px;
 }
 .sliderOrderBtn {
-    margin-left: 190px;
+    margin-left: 70%;
 
     max-width: 139px;
 
@@ -306,14 +325,14 @@ h6{
         flex-direction: column;
     }
     .container {
-        min-width: 320px;
+        width: 100%;
         background:  none;
     }
     .bar {
         margin: 0 auto;
         padding: 10px 19px 15px 19px;
 
-        max-width: 320px;
+        width: 100%;
         position: relative;
 
     }
@@ -330,12 +349,16 @@ h6{
 
         padding: 15px 25px 0px 20px;
 
+        width: 60%;
+
         right: 0;
-        top: 48px;
+        top: 47px;
     }
     .navigationPages {
         flex-direction: column;
         align-items: flex-start;
+
+        z-index: 2;
 
         margin: 0;
         gap: 8px;
@@ -345,6 +368,7 @@ h6{
         font-size: 12px;
         line-height: 16px;
 
+
         width: 132px;
 
         padding-bottom: 8px;
@@ -353,8 +377,11 @@ h6{
     .phone {
         position: absolute;
         background-color: var(--white);
+
+        width: 60%;
+        
         right: 0;
-        top: 187px;
+        top: 185px;
 
         gap: 13px;
         z-index: 1;
@@ -402,12 +429,11 @@ h6{
     .sloganWrapper{
         margin: 0 auto;
 
-        width: 320px;
-        height: 180px;
+        width: 100%;
         
         background: 
         linear-gradient(0deg, rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), 
-         url(./images/banner.png);
+         url(./assets/images/header/banner.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: left;
@@ -417,7 +443,9 @@ h6{
         justify-content: center;
         
         margin: 0 auto;
-        padding-top: 60px;
+        width: 100%;
+        padding-top: 28.12%;
+        padding-bottom: 28.12%;
 
         font-size: 15px;
         line-height: 20px;
@@ -427,32 +455,33 @@ h6{
         display: flex;
         flex-direction: column;
 
+        width: 100%;
+        height: 392px;
+
         margin: 0 auto;
+        position: relative;
 
         background: linear-gradient(0deg, rgba(33, 50, 32, 0.7),
          rgba(33, 50, 32, 0.7)),
-         url(./images/WoodTexture.png);
-
-        width: 320px;
-        height: 392px;
-        position: relative;
+         url(./assets/images/header/WoodTexture.png);
     }
     .sliderList {
         position: absolute;
-        max-width: 320px;
+        width: 100%;
         bottom: 0px;
         left: 0px;
-
-        margin: 60px 118px 15px 117px;
+        margin-left: calc(50% - 33px);
+        margin-bottom: 15px ;
+        margin-top: 60px;
 
         gap: 11px;
     }
     .sliderLine {
-        width: 1600px;
+        width: 500%;
         height:392px;
     }
     .sliderPage {
-        width: 320px;
+        width: 100%;
         height: 392px;
     }
     .dot {
@@ -477,13 +506,15 @@ h6{
     }
     .sliderInfo {
 
-        max-width: 320px;
+        max-width: 100%;
         max-height: 165px;
 
         margin: 139px 19px 0px 43px;
         padding: 21px 24px 21px 28px;
     }
     .sliderInfoWrapper {
+        display: flex;
+        flex-direction: column;
     }
     .sliderTitle {
         font-weight: 600;
@@ -493,7 +524,7 @@ h6{
     .sliderTitle::after{
         left: 0px;
         top: 24px;
-        background-image: url(./images/yellowSnake.svg) ;
+        background-image: url(./assets/images/header/yellowSnake.svg);
         background-size: 26px 5px;
         background-repeat: no-repeat;
     }
@@ -503,8 +534,8 @@ h6{
         line-height: 15px;
     }
     .sliderOrderBtn {
-        margin-left: 45px;
-        margin-top: 32px;
+        margin-left: calc(50% - 45px);
+        margin-top: 20%;
 
         padding: 8px 22px;
         
@@ -518,7 +549,7 @@ h6{
 /* First section */
 .main{
     margin: 0 auto;
-    max-width: 1440px;
+   width: 100%;
 }
 
 .advantages {
@@ -526,8 +557,9 @@ h6{
     position: relative;
     flex-direction: column;
 
+    width: 100%;
+
     margin: 71px auto 0 auto;
-    max-width: 1440px;
 
     color: var(--dark);
 }
@@ -536,7 +568,7 @@ h6{
     width: 96px;
     height: 83px;
     position: absolute;
-    background-image: url(./images/DotsUnion.png);
+    background-image: url(./assets/images/icons/DotsUnion.png);
     background-size: 96px 83px;
     left: 0;
     top: 0;
@@ -546,7 +578,7 @@ h6{
     width: 96px;
     height: 83px;
     position: absolute;
-    background-image: url(./images/DotsUnion.png);
+    background-image: url(./assets/images/icons/DotsUnion.png);
     background-size: 96px 83px;
     right: 0;
     bottom: 0;
@@ -564,9 +596,9 @@ h6{
     width: 32px;
     height: 32px;
     position: absolute;
-    background-image: url(./images/logoSlime.png);
+    background-image: url(./assets/images/icons/logoSlime.png);
     background-size: 32px 32px;
-    left: 476px;
+    left: 477px;
     top: -10px;
     z-index: -1;
 }
@@ -586,7 +618,7 @@ h6{
     flex-wrap: wrap;
     justify-content: space-between;
 
-    min-width: 941px;
+    width: 80%;
 
     margin: 56px auto 88px auto;
 }
@@ -613,13 +645,9 @@ h6{
 }
 
 @media (width<= 767px) {
-    .main{
-        margin: 0 auto;
-        max-width: 320px;
-    }
     .advantages {
         margin: 28px 36px;
-        max-width: 320px;
+        width: calc(100% - 64px);
     }
     .advantages::before {
         width: 34px;
@@ -632,7 +660,7 @@ h6{
         width: 34px;
         height: 29px;
         background-size: 34px 29px;
-        right: -36px;
+        right: -25px;
     }
     .advantagesTitle {
         font-weight: 700;
@@ -672,4 +700,432 @@ h6{
         font-size: 12px;
         line-height: 16px;
     }
+}
+
+/* Second section */
+
+.tasks {
+    display: flex;
+    gap: 39px;
+
+    margin: 20px  112px auto 150px;
+
+    width: calc(100% - 262px);
+}
+.tasksImgs {
+    width: 59%;
+    height: 591px;
+
+    position: relative;
+}
+.greenBlock {
+    width: 57%;
+    height: 91%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    z-index: 0;
+
+    background: linear-gradient(0deg, rgba(72, 91, 71, 0.8), rgba(72, 91, 71, 0.8)), url(./assets/images/header/WoodTexture.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.taskImg {
+    width: 79%;
+    height: 67%;
+    position: relative;
+
+    margin: 142px 0 0 78px;
+
+    z-index: 1;
+}
+.taskImgsTitle{
+    width: 46%;
+    height: 23%;
+
+    position: absolute;
+    left: 51px;
+    bottom: 53px;
+
+    z-index: 1;
+    
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+
+    padding: 38px 35px 39px 39px;
+    
+    background: var(--wooden);
+    color: var(--white);
+
+}
+.brownBlock {
+    width: 30%;
+    height: 23%;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    background: var(--wooden);
+}
+.tasksWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+
+    width: 35%;
+}
+.task {
+    display: flex;
+    flex-direction: column;
+}
+.tasksWrapper p {
+    display: none;
+}
+.taskTitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 31px;
+    
+}
+.taskList  {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+}
+.taskList li  {
+    margin-left: 56px;
+    position: relative;
+}
+.taskList li::before  {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top:11px;
+
+    width: 10px;
+    height: 10px;
+
+    background-color: var(--dark-green);
+    border-radius: 10px;
+}
+
+@media (width<=767px) {
+    .tasks {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        margin-left: 21px;
+        padding-top: 89px; 
+        /* 46 22p*/
+
+        width: calc(100% - 21px);
+    }
+    .tasksImgs {
+
+        width: calc(100% - 22px);
+        height: 167px;
+    }
+    .greenBlock {
+        width: 83px;
+        height: 57px;
+    
+        z-index: 2;
+        background: var(--dark-green);
+    }
+    .taskImg {
+        width: 228px;
+        height: 125px;
+        position: relative;
+    
+        margin: 22px 0 0 30px;
+    
+        z-index: 1;
+    }
+    .tasksImgs:before {
+        content: '';
+        position: absolute;
+        width: 14px;
+        height: 14px;
+
+        left: 73px;
+        top: -48px;
+
+        background-image: url(./assets/images/icons/logoSlime.png);
+        background-size: cover;
+    }
+    .taskImgsTitle{
+        width: 104px;
+        height: 20px;
+    
+        position: absolute;
+        left: 55px;
+        top: -89px;
+    
+        z-index: 1;
+        
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+
+    
+        
+        background: transparent;
+        color: var(--dark);
+    
+    }
+    .taskImgsTitle span{
+        display: none;
+    }
+    .brownBlock {
+        width: 91px;
+        height: 61px;
+    
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    
+        background: var(--wooden);
+    }
+    .tasksWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+
+        width: 100%;
+        background-color: var(--wooden);
+    }
+    .tasksWrapper:after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 43px;
+
+        right:14px;
+        bottom: 29px;
+
+        background-image: url(./assets/images/icons/whiteDotsUnion.svg);
+        background-size: cover;
+    }
+    .tasksWrapper p {
+        display: flex;
+
+        margin: 10px 0px 13px 18px;
+        
+
+        font-size: 8px;
+        line-height: 11px;
+        color: var(--white);
+    }
+    .task {
+        display: flex;
+        flex-direction: column;
+    }
+    .taskTitle {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+
+        padding: 17px 22px 16px 24px;
+        
+        color: var(--white);
+    }
+    .taskTitle br{
+        display: none;
+    }
+    .taskList  {
+        display: flex;
+        flex-direction: column;
+        max-width: 237px;
+    
+        gap: 20px;
+    
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 14px;
+
+        color: var(--white);
+    }
+    .taskList li  {
+        margin-left: 56px;
+        position: relative;
+    }
+    .taskList li::before  {
+        content: '';
+        position: absolute;
+        left: -26px;
+        top: 5px;
+    
+        width: 6px;
+        height: 6px;
+    
+        background-color: var(--white);
+        border-radius: 10px;
+    }
+}
+
+
+/* secton  */
+.thermowood {
+    display: flex;
+    position: relative;
+
+    margin-top: 141px;
+
+    width: 100%;
+    height: 338px;
+
+    background-color: var(--dark-green);
+}
+.thermowood::after {
+    content: '';
+    position: absolute;
+
+    bottom: 55px;
+    right: 119px;
+    
+    width: 58px;
+    height: 50px;
+
+    background-image: url(./assets/images/icons/whiteDotsUnion.svg);
+    background-size: cover;
+}
+.thermowoodWrapper {
+    margin: 51px 0 55px 150px;
+    width: 44%;
+
+    position: relative;
+
+    font-family: 'Roboto';
+    font-style: normal;
+
+    color: var(--white);
+}
+.thermowoodTitle {
+
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+.thermowoodTitle::after {
+    content: '';
+    position: absolute;
+
+    top: -35px;
+    right: 150px;
+    
+    width: 58px;
+    height: 50px;
+
+    background-image: url(./assets/images/icons/whiteDotsUnion.svg);
+    background-size: cover;
+}
+.thermowoodTitle br{
+    line-height: 33px;
+}
+.thermowoodText {
+    display: flex;
+
+    max-width: 631px;
+
+    margin-top: 18px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+.thermowoodImg {
+    position: absolute;
+    width: 451px;
+    height: 314px;
+
+    right: 177px;
+    bottom: 75px;
+}
+
+@media (width<= 767px) {
+    .thermowood {
+        display: block;
+        position: relative;
+    
+        margin-top: 64px;
+        margin-right: 37px;
+    
+        width: calc(100% - 37px);
+        height: 367px;
+    
+        background-color: var(--dark-green);
+    }
+    .thermowood::after {
+        content: '';
+        position: absolute;
+    
+        bottom: 11px;
+        right: 0px;
+        
+        width: 43px;
+        height: 37px;
+    }
+    .thermowoodWrapper {
+        margin: 64px 0px 24px 37px;
+        padding-top: 149px;
+        width: 100%;
+    
+        position: relative;
+    
+        font-family: 'Roboto';
+        font-style: normal;
+    
+        color: var(--white);
+    }
+    .thermowoodTitle {
+        
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .thermowoodTitle::after {
+        top: 20px;
+        left: -22px;
+        
+        width: 43px;
+        height: 37px;
+    }
+    .thermowoodTitle br{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .thermowoodText {
+        display: flex;
+    
+        max-width: 229px;
+    
+        margin-top: 12px;
+        margin-right: 55px;
+
+    
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .thermowoodImg {
+        position: absolute;
+        width: 223px;
+        height: 154px;
+    
+        right: -17px;
+        top: -36px;
+    }
+
 }

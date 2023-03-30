@@ -21,7 +21,7 @@
       <div class="container">
         <div class="bar">
           <div class="logo">
-            <img src="./images/logo.png" alt="logo" />
+            <img src="./assets/images/header/logo.png" alt="logo" />
             <p class="logoText">
               LOGO<br />
               company
@@ -39,20 +39,20 @@
             <div class="phoneWrapper">
               <img
                 class="phoneImg"
-                src="./images/phoneHeader.svg"
+                src="./assets/images/header/phoneHeader.svg"
                 alt="phone"
               />
-              <p class="phoneNumber">8 800 888 88 88</p>
+              <a href="tel:+88008888888" class="phoneNumber">8 800 888 88 88</a>
             </div>
             <button class="phoneBtn">Заказать звонок</button>
           </div>
           <div class="burgerContainer">
             <button class="burgerButton" onclick="toggleClass()">Open</button>
-            <span>
+            <div>
               <span class="burgerBar"></span>
               <span class="burgerBar"></span>
               <span class="burgerBar"></span>
-            </span>
+            </div>
           </div>
         </div>
         <div class="sloganWrapper">
@@ -63,7 +63,7 @@
       </div>
       <div class="slider">
         <ul class="sliderList">
-          <li><div class="dot currentDot"></div></li>
+          <li><div class="dot activeDot"></div></li>
           <li><div class="dot"></div></li>
           <li><div class="dot"></div></li>
           <li><div class="dot"></div></li>
@@ -71,17 +71,23 @@
         </ul>
         <div class="SliderBtns">
           <button class="sliderBtn previous">
-            <img src="./images/btnL.svg" alt="на предыдущий слайд" />
+            <img
+              src="./assets/images/header/btnL.svg"
+              alt="на предыдущий слайд"
+            />
           </button>
           <button class="next">
-            <img src="./images/btnR.svg" alt="на следующий слайд" />
+            <img
+              src="./assets/images/header/btnR.svg"
+              alt="на следующий слайд"
+            />
           </button>
         </div>
         <div class="sliderLine" id="sliderLine">
           <div class="sliderPage">
             <img
               class="sliderImg"
-              src="./images/sliderSpruce.jpg"
+              src="./assets/images/header/sliderSpruce.jpg"
               alt="Деревянный забор Ёлочка"
             />
             <div class="sliderInfo">
@@ -100,7 +106,7 @@
           <div class="sliderPage">
             <img
               class="sliderImg"
-              src="./images/bannerMin.png"
+              src="./assets/images/header/banner.png"
               alt="Деревянный забор Ёлочка"
             />
             <div class="sliderInfo">
@@ -119,7 +125,7 @@
           <div class="sliderPage">
             <img
               class="sliderImg"
-              src="./images/sliderSpruce.jpg"
+              src="./assets/images/header/sliderSpruce.jpg"
               alt="Деревянный забор Ёлочка"
             />
             <div class="sliderInfo">
@@ -138,7 +144,7 @@
           <div class="sliderPage">
             <img
               class="sliderImg"
-              src="./images/bannerMin.png"
+              src="./assets/images/header/banner.png"
               alt="Деревянный забор Ёлочка"
             />
             <div class="sliderInfo">
@@ -157,7 +163,7 @@
           <div class="sliderPage">
             <img
               class="sliderImg"
-              src="./images/sliderSpruce.jpg"
+              src="./assets/images/header/sliderSpruce.jpg"
               alt="Деревянный забор Ёлочка"
             />
             <div class="sliderInfo">
@@ -186,25 +192,99 @@
         </p>
         <div class="advantagesContainer">
           <div class="advantage">
-            <img src="./images/lock.svg" alt="открытый замок" />
+            <img
+              src="./assets/images/sectionAdvantages/lock.svg"
+              alt="открытый замок"
+            />
             <p class="advantageText">Доступность</p>
           </div>
           <div class="advantage">
-            <img src="./images/tools.svg" alt="инструменты" />
+            <img
+              src="./assets/images/sectionAdvantages/tools.svg"
+              alt="инструменты"
+            />
             <p class="advantageText">Практичность</p>
           </div>
           <div class="advantage">
-            <img src="./images/leaf.svg" alt="лист дерева" />
+            <img
+              src="./assets/images/sectionAdvantages/leaf.svg"
+              alt="лист дерева"
+            />
             <p class="advantageText">Экологичность</p>
           </div>
           <div class="advantage">
-            <img src="./images/money.svg" alt="деньги" />
+            <img
+              src="./assets/images/sectionAdvantages/money.svg"
+              alt="деньги"
+            />
             <p class="advantageText">Экономичность</p>
           </div>
         </div>
       </section>
+      <section class="tasks">
+        <div class="tasksImgs">
+          <div class="greenBlock"></div>
+          <img
+            class="taskImg"
+            src="./assets/images/sectionTasks/WoodenFence.jpg"
+            alt="wooden fence"
+          />
+          <h3 class="taskImgsTitle">
+            Особенности <span>деревянных заборов</span>
+          </h3>
+          <div class="brownBlock"></div>
+        </div>
+        <div class="tasksWrapper">
+          <div class="task">
+            <h3 class="taskTitle">
+              Деревянные изгороди<br />
+              представляют собой<br />
+              функциональные конструкции, на которые возложены две основные
+              задачи:
+            </h3>
+            <ul class="taskList">
+              <li>защищать участок и дом от проникновения незнакомых людей;</li>
+              <li>украшать ландшафт.</li>
+            </ul>
+          </div>
+          <div class="task">
+            <h3 class="taskTitle">Они могут ограждать:</h3>
+            <ul class="taskList">
+              <li>основное здание и прилегающую к нему территорию</li>
+              <li>лишь дворовые строения</li>
+              <li>палисадник</li>
+              <li>отдельные клумбы</li>
+            </ul>
+          </div>
+          <p class="task">
+            Особенности деревянных<br />
+            заборов
+          </p>
+        </div>
+      </section>
+      <section class="thermowood">
+        <div class="thermowoodWrapper">
+          <h3 class="thermowoodTitle">
+            Ваш забор из термодревесины будет <br />ВЕЧНЫМ!
+          </h3>
+          <p class="thermowoodText">
+            Термодревесина устойчива к влаге. Она не набухнет и не деформируется
+            в условиях повышенной влажности.<br />
+            Даже относительно мягкие в исходном варианте сорта после обработки
+            становятся твердыми и устойчивыми к механическим повреждениям. На
+            древесине не остается характерных вмятин от ударов и царапин,
+            испортить поверхность достаточно сложно и преднамеренно, не то, что
+            нечаянно.
+          </p>
+        </div>
+        <img
+          class="thermowoodImg"
+          src="./assets/images/thermowood/boards.png"
+          alt="термодревесина"
+        />
+      </section>
     </main>
     <footer></footer>
-    <script src="./index.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
