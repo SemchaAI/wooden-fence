@@ -6,6 +6,9 @@ let width2;
 const sliderLine2 = document.querySelector(".sliderFTLine");
 const sliderList2 = document.querySelectorAll(".dotFT");
 
+window.addEventListener("resize", init2);
+init2();
+
 const el2 = document.getElementById("sliderFTLine");
 el2.addEventListener("touchmove", handleMove2);
 el2.addEventListener("touchstart", handleStart2);
@@ -59,5 +62,3 @@ function Prev2() {
 function init2() {
   width2 = document.querySelector(".sliderFTPage").offsetWidth + 17;
 }
-window.addEventListener("resize", init2);
-init2();
