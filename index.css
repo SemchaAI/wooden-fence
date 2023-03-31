@@ -356,8 +356,8 @@ h6{
     }
     .navigationPages {
         flex-direction: column;
-        align-items: flex-start;
-
+        width: 100%;
+        
         z-index: 2;
 
         margin: 0;
@@ -598,7 +598,7 @@ h6{
     position: absolute;
     background-image: url(./assets/images/icons/logoSlime.png);
     background-size: 32px 32px;
-    left: 477px;
+    left: calc(50% - 244px); /* 477px*/
     top: -10px;
     z-index: -1;
 }
@@ -671,7 +671,7 @@ h6{
         width: 14px;
         height: 14px;
         background-size: 14px 14px;
-        left: -11px;
+        left:  calc(50% - 138px);
         top: 2px;
         z-index: -1;
     }
@@ -706,8 +706,7 @@ h6{
 
 .tasks {
     display: flex;
-    gap: 39px;
-
+    gap: 69px; /* 39px */
     margin: 20px  112px auto 150px;
 
     width: calc(100% - 262px);
@@ -828,28 +827,28 @@ h6{
 
         margin-left: 21px;
         padding-top: 89px; 
-        /* 46 22p*/
 
         width: calc(100% - 21px);
     }
     .tasksImgs {
 
         width: calc(100% - 22px);
-        height: 167px;
+        height: 77%; /*167px*/
     }
     .greenBlock {
-        width: 83px;
-        height: 57px;
+        width: 30%; /*83px*/
+        height: 34%; /*57px*/
     
         z-index: 2;
         background: var(--dark-green);
     }
     .taskImg {
-        width: 228px;
-        height: 125px;
+        width: 82%;/*228px*/
+        height: 75%;/*125px*/
         position: relative;
     
         margin: 22px 0 0 30px;
+        margin-top: 10%;
     
         z-index: 1;
     }
@@ -859,7 +858,7 @@ h6{
         width: 14px;
         height: 14px;
 
-        left: 73px;
+        left: calc(50% - 90px);
         top: -48px;
 
         background-image: url(./assets/images/icons/logoSlime.png);
@@ -870,7 +869,7 @@ h6{
         height: 20px;
     
         position: absolute;
-        left: 55px;
+        left: calc(50% - 104px);
         top: -89px;
     
         z-index: 1;
@@ -889,12 +888,12 @@ h6{
         display: none;
     }
     .brownBlock {
-        width: 91px;
-        height: 61px;
+        width: 33%;/* 91px */
+        height: 36.5%;/*61px  */
     
         position: absolute;
-        right: 0;
-        bottom: 0;
+        right: 5%;
+        bottom: -10%;
     
         background: var(--wooden);
     }
@@ -1820,13 +1819,7 @@ h6{
 }
 .footerContactsLi{
     display: flex;
-  
-
     gap: 38px;
-}
-.footerPhone {
-}
-.footerMail {
 }
 .footerGeo {
     max-width: 229px;
@@ -1953,11 +1946,6 @@ h6{
     }
     .footerContactsLi img {
         display:  none;
-    }
-    .footerPhone {
-
-    }
-    .footerMail {
     }
     .footerGeo {
         max-width: 229px;
