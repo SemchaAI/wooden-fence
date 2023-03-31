@@ -28,7 +28,6 @@ html{
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-/* font-family: 'Roboto', sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 18px;
@@ -208,7 +207,8 @@ h6{
 }
 .slider {
     width: 30%;
-    background: linear-gradient(0deg, rgba(72, 91, 71, 0.8), rgba(72, 91, 71, 0.8)), url(./assets/images/header/WoodTexture.png);
+    background: linear-gradient(0deg, rgba(72, 91, 71, 0.8), rgba(72, 91, 71, 0.8)), 
+    url(./assets/images/header/WoodTexture.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -223,6 +223,7 @@ h6{
 .sliderLine {
     width: 500%;
     height: 473px;
+    left: 0;
     display: flex;
     position: relative;
     transition: all ease 1s;
@@ -1186,7 +1187,8 @@ h6{
 .sliderFTLine {
     width: 1380px;
     height: 351px;
-
+    left: 0;
+    
     display: flex;
     position: relative;
     transition: all ease 1s;
