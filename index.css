@@ -1129,3 +1129,837 @@ h6{
     }
 
 }
+
+/* section SliderFT */
+
+.sliderFenceTypes {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    padding-left: 16px;
+    margin: 78px 0 0 150px;
+    width: calc(100% - 166px);
+    height: 615px;
+
+    overflow: hidden;
+}
+
+.thermowood::before{
+    content: '';
+    position: absolute;
+    width: 96px;
+    height: 83px;
+    right: 101px;
+    bottom: -161px;
+    background-image: url(./assets/images/icons/DotsUnion.png);
+    background-size: cover;
+}
+
+.sliderFTTitle {
+    margin-top: 49px;
+
+    z-index: 2;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+}
+.sliderFTTitle::before{
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 38px;
+
+    z-index: -1;
+    
+    width: 28px;
+    height: 28px;
+    
+    background-image: url(./assets/images/icons/logoSlime.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+        
+}
+
+.sliderFTLine {
+    width: 1380px;
+    height: 351px;
+
+    display: flex;
+    position: relative;
+    transition: all ease 1s;
+
+    margin-top: 82px;
+    margin-left: 43px;
+    gap: 30px;
+}
+.sliderFTPage {
+    width: 20%; 
+    /* 4% */
+    height: 351px;
+}
+
+.sliderFTPage:hover .sliderFTaction,
+.sliderFTPage:focus .sliderFTaction{
+    visibility:visible;
+}
+
+.imgChristmasTree{
+    background: url(./assets/images/sectionFTslider/christmasTree.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sliderFTPage.imgChristmasTree:hover{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/images/sectionFTslider/christmasTree.png);
+}
+.imgClassic {
+    background: url(./assets/images/sectionFTslider/classic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sliderFTPage.imgClassic:hover{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/images/sectionFTslider/classic.png);
+
+}
+.imgLattice {
+    background: url(./assets/images/sectionFTslider/lattice.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sliderFTPage.imgLattice:hover{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/images/sectionFTslider/lattice.png);
+
+}
+.imgRancho {
+    background: url(./assets/images/sectionFTslider/rancho.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sliderFTPage.imgRancho:hover{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+     url(./assets/images/sectionFTslider/rancho.png);
+}
+.imgWattle {
+    background: url(./assets/images/sectionFTslider/wattle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sliderFTPage.imgWattle:hover{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/images/sectionFTslider/wattle.png);
+
+}
+.sliderFTaction{
+    visibility: hidden;
+
+    color: var(--white);
+}
+.sliderFTPage:hover .sliderActionTitle {
+    margin-top: 77px;
+
+}
+.sliderActionTitle{
+    margin: 11px 0px 0px 25px;
+
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+    color: var(--white);
+}
+.sliderFTPage:hover .sliderActionTitle::before {
+    content: '';
+    position: absolute;
+
+    width: 42px;
+    height: 8px;
+
+    top: 116px;
+
+   background-image: url(./assets/images/icons/yellowSnake.svg);
+}
+.sliderFTDesc {
+    margin: 19px 0px 0px 25px;
+    max-width: 200px;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+.sliderFTOrderBtn {
+    margin: 19px 0px 0px 25px;
+    padding: 12px 15px;
+
+    background-color: var(--wooden);
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    
+    text-transform: uppercase;
+    color: var(--white);
+}
+.sliderListFT{
+    margin-left: 43px;
+    margin-top: 46px;
+    display: flex;
+    gap: 16px;
+}
+
+.dotFT{
+    width: 13px;
+    height: 13px;
+    border-radius: 7px;
+    background-color: var(--dark-green);
+}
+
+.activeDotFT {
+    background-color: var(--dark-green);
+    box-shadow: 0 0 0 3px  var(--white), 0 0 0 4px var(--dark-green);
+}
+
+@media (width <=767px) {
+    
+.sliderFenceTypes {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    padding:0;
+    margin: 39px auto 0 auto;
+    width: 229px;
+    height: 382px;
+
+    overflow: hidden;
+}
+.thermowood::after{
+    content: '';
+    position: absolute;
+    width: 34px;
+    height: 29px;
+    left: 0px;
+    bottom: -151px;
+    background-image: url(./assets/images/icons/DotsUnion.png);
+    background-size: cover;
+}
+.thermowood::before{
+    content: '';
+    position: absolute;
+    width: 34px;
+    height: 29px;
+    right: -34px;
+    bottom: -329px;
+    background-image: url(./assets/images/icons/DotsUnion.png);
+    background-size: cover;
+}
+
+.sliderFTTitle {
+    margin-top: 0px;
+    margin-left: 25px;
+    max-width: 204px;
+
+    z-index: 2;
+
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+}
+.sliderFTTitle br {
+    display: none;
+}
+.sliderFTTitle::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 3px;
+
+    z-index: -1;
+    
+    width: 14px;
+    height: 14px;
+    
+    background-image: url(./assets/images/icons/logoSlime.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+        
+}
+
+.sliderFTLine {
+    width: 1145px;
+    height: 340px;
+
+    display: flex;
+    position: relative;
+    transition: all ease 1s;
+
+    margin-top: 30px;
+    margin-left: 17px;
+    gap: 17px;
+}
+.sliderFTPage {
+    /* width: 229px;  */
+    width: 195px;
+    height: 278px;
+}
+
+.sliderFTPage.imgChristmasTree:hover{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./assets/images/sectionFTslider/christmasTree.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sliderFTPage.imgClassic:hover{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./assets/images/sectionFTslider/classic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sliderFTPage.imgLattice:hover{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./assets/images/sectionFTslider/lattice.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sliderFTPage.imgRancho:hover{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+     url(./assets/images/sectionFTslider/rancho.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sliderFTPage.imgWattle:hover{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./assets/images/sectionFTslider/wattle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.sliderActionTitle{
+    margin-left: 27px;
+
+    font-size: 12px;
+    line-height: 16px;
+}
+.sliderFTPage:hover .sliderActionTitle {
+    margin-top: 52px;
+
+}
+.sliderFTPage:hover .sliderActionTitle::before {
+    top: 79px;
+}
+.sliderFTDesc {
+    margin: 30px 0px 0px 26px;
+    max-width: 143px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    
+}
+.sliderFTOrderBtn {
+    margin: 27px 0px 0px 25px;
+}
+.sliderListFT{
+    margin-left: 58px;
+    margin-bottom: 5px;
+    margin-top: 19px;
+    display: flex;
+    gap: 16px;
+}
+.dotFT{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--dark-green);
+}
+.activeDotFT {
+    background-color: var(--dark-green);
+    box-shadow: 0 0 0 3px  var(--white), 0 0 0 4px var(--dark-green);
+}
+}
+
+
+/* Section form */
+
+.questions {
+    width: 100%;
+    height: 553px;
+
+    margin-top: 105px;
+
+    position: relative;
+
+}
+.questions::after{
+    content: '';
+    width: 96px;
+    height: 83px;
+
+    position: absolute;
+    right: 35px;
+    top: -26px;
+
+    background-image: url(./assets/images/icons/DotsUnion.png);
+    background-size: cover;
+}
+.formWrapper{
+    position: relative;
+    margin: 0 auto;
+    width: 56%;
+
+}
+.formWrapper::before{
+    content: '';
+    width: 247px;
+    height: 206px;
+
+    position: absolute;
+    left: -54px;
+    top: -47px;
+    z-index: -1;
+
+    background-color: var(--wooden);
+}
+.formWrapper:after{
+    content: '';
+    width: 179px;
+    height: 150px;
+
+    position: absolute;
+    right: 0;
+    bottom: -37px;
+    z-index: -1;
+
+    background-color: var(--wooden);
+}
+.form {
+    width: 87%;
+    height: 469px;
+    position: relative;
+
+    margin: 47px auto 37px auto;
+    padding: 21px 132px 18px 132px;
+
+
+    background-color: var(--dark-green);
+}
+.formTitle {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+
+    color: var(--white);
+}
+.formSecondTitle {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+
+    color: var(--white);
+
+}
+.formText {
+    margin-top: 18px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+
+    color: var(--white);
+}
+.formInput {
+    height: 59px;
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 20px 24px 19px 24px;
+
+    background-color: var(--white);
+}
+.formBtn {
+    height: 59px;
+    width: 68%;
+    margin: 18px auto;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 12px 44px 13px 44px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+
+    color: var(--white);
+    background-color: var(--wooden);
+}
+.formCheckboxContainer {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    margin-top: 22px;
+    margin-bottom: 18px;
+}
+.formLabel {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: var(--white);
+}
+
+@media (width<= 767px) {
+    .questions {
+        width: 100%;
+        height: 305px;
+    
+        margin-top: 35px;
+    
+        position: relative;
+    }
+    .questions::after{
+        width: 28px;
+        height: 24px;
+    
+        position: absolute;
+        left: 10px;
+        top:  233px;
+    
+        background-image: url(./assets/images/icons/whiteDotsUnion.svg);
+    }
+    .formWrapper{
+        position: relative;
+        margin: 0 auto;
+        width: 95%;
+    
+    }
+    .formWrapper::before{
+        width: 37px;
+        height: 30px;
+
+        left: 0px;
+        top: -9px;
+    }
+    .formWrapper:after{
+        width: 37px;
+        height: 30px;
+    
+        right: 0;
+        bottom: -9px;
+    }
+    .form {
+        width: 94%;
+        height: 285px;
+    
+        margin: 9px auto 9px auto;
+        padding: 21px 20px 15px 21px;
+
+    }
+    .formTitle {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .formSecondTitle {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .formText {
+        margin-top: 9px;
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .formInput {
+        height: 35px;
+        width: 100%;
+    
+        margin-top: 16px;
+    
+        padding: 12px 15px 11px 15px;
+    }
+    .formBtn {
+        height: 36px;
+        width: 73%;
+        margin: 10px auto;
+    
+    
+        padding: 10px 38px;
+    
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .formCheckboxContainer {
+        align-items: center;
+        gap: 10px;
+        margin-top: 13px;
+        margin-bottom: 15px;
+    }
+    .formCheckbox{
+        width: 5px;
+        height: 5px;
+    }
+    .formLabel {
+        font-weight: 400;
+        font-size: 7px;
+        line-height: 10px;
+    }
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    height: 344px;
+    position: relative;
+}
+.footerWrapper{
+    margin-top: 135px;
+
+    width: 100%;
+    height: 344px;
+
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    background-color: var(--dark-green);
+}
+.footerWrapper::before{
+    content: '';
+    position: absolute;
+
+    width: 96px;
+    height: 83px;
+
+    left: 44px;
+    top: -135px;
+
+    background-image: url(./assets/images/icons/DotsUnion.png);
+    background-size: cover;
+}
+.footerWrapper::after{
+    content: '';
+    position: absolute;
+
+    width: 96px;
+    height: 83px;
+
+    left: 537px;
+    top: 190px;
+
+    background-image: url(./assets/images/icons/whiteDotsUnion.svg);
+    background-size: cover;
+}
+.footerContainer{
+    margin-top: 101px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 106px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    
+}
+.footerImg {
+    position: absolute;
+
+    width: 514px;
+    height: 329px;
+
+    z-index: 1;
+
+    left: 0;
+    top: -93px;
+
+    margin: 0 0 0px 87px;
+}
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footerLinks a { 
+    color: var(--white) ;
+}
+.footerContacts {
+    margin-right: 101px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.footerContacts  a{
+    color: var(--white) ;
+}
+.footerContactsLi{
+    display: flex;
+  
+
+    gap: 38px;
+}
+.footerPhone {
+}
+.footerMail {
+}
+.footerGeo {
+    max-width: 229px;
+}
+
+@media (width <= 767px) {
+    .footer {
+        margin-top: 36px;
+        height: 205px;
+    }
+    .footerWrapper{
+        margin: 0;
+
+        height: inherit;
+    
+        display: flex;
+    
+        background-color: var(--dark-green);
+    }
+    .footerWrapper::before{
+        content: '';
+        position: absolute;
+    
+        width: 96px;
+        height: 83px;
+    
+        left: 44px;
+        top: -135px;
+    
+        background-image: url(./assets/images/icons/DotsUnion.png);
+        background-size: cover;
+        display: none;
+    }
+    .footerWrapper::after{
+        content: '';
+        position: absolute;
+    
+        width: 96px;
+        height: 83px;
+    
+        left: 537px;
+        top: 190px;
+    
+        background-image: url(./assets/images/icons/whiteDotsUnion.svg);
+        background-size: cover;
+        display: none;
+    }
+    .footerContainer{
+        width: 100%;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0px;
+    
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 14px;
+        
+        text-align: center;
+        
+    }
+    .footerImg {
+        display: none;
+    }
+    .footerLinks {
+        padding-top: 12px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 9px;
+
+        height: 120px;
+    }
+    .footerLinks a { 
+        color: var(--white) ;
+    }
+    .footerLinks::before{
+        content: '';
+        position: absolute;
+
+        left: 9px;
+        top: 12px;
+
+        width: 36px;
+        height: 31px;
+
+        background-image: url(./assets/images/icons/whiteDotsUnion.svg);
+        background-size: cover;
+    }
+    .footerLinks::after{
+        content: '';
+        position: absolute;
+
+        right:  9px;
+        bottom:  15px;
+
+        width: 20px;
+        height: 17px;
+
+        background-image: url(./assets/images/icons/whiteDotsUnion.svg);
+        background-size: cover;
+    }
+    .footerContacts {
+        margin-right: 0px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+
+        flex-grow: 2;
+
+        background-color: var(--darkest-green);
+    }
+    .footerContacts  a{
+        color: var(--white) ;
+    }
+    .footerContactsLi{
+        display: flex;
+        justify-content: center;
+      
+        gap: 0;
+    }
+    .footerContactsLi img {
+        display:  none;
+    }
+    .footerPhone {
+
+    }
+    .footerMail {
+    }
+    .footerGeo {
+        max-width: 229px;
+    }
+}
