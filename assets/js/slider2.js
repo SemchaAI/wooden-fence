@@ -24,7 +24,6 @@ function handleEnd2() {
   if (x2 === undefined) {
     return 0;
   }
-  console.log(x2);
   if (x2 < xStart2) {
     Next2();
     x2 = undefined;
