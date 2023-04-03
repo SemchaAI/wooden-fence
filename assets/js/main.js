@@ -28,14 +28,10 @@ document.querySelector(".next").addEventListener("click", Next);
 document.querySelector(".previous").addEventListener("click", Prev);
 
 function handleMove(event) {
-  console.log("touch");
   x = event.touches[0].clientX;
-  console.log(x);
 }
 function handleStart(event) {
-  console.log("start");
   xStart = event.touches[0].clientX;
-  console.log(xStart);
 }
 function handleEnd() {
   if (x < xStart) {
@@ -74,7 +70,6 @@ function init() {
   width = document.querySelector(".slider").offsetWidth;
   let nav = document.querySelector("#nav");
   let phone = document.querySelector("#phone");
-  console.log(width);
   if (width !== 320) {
     nav.classList.remove("none");
     phone.classList.remove("none");

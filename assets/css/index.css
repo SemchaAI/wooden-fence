@@ -78,21 +78,18 @@ h6{
 .header {
     display: flex;
     margin: 0 auto ;
-
-    /* max-width: 1440px; */
 }
 .container {
     width: 70%;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./assets/images/header/banner.png);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;   
 }
 .bar {
     display: flex;
     justify-content: space-between;
 
-    max-width: 857px;
+    width: 80%;
     max-height: 89px;
 
     padding: 22px 33px 31px 16px;
@@ -101,7 +98,6 @@ h6{
 
     background-color: var(--white);
 
-    font-style: normal;
     font-weight: 700;
     font-size: 15px;
     line-height: 20px;
@@ -135,9 +131,7 @@ h6{
 }
 .phone {
     display: flex;
-    align-items: center;
     gap: 10px;
-    
 }
 .phoneWrapper{
     display: flex;
@@ -209,7 +203,6 @@ h6{
     width: 30%;
     background: linear-gradient(0deg, rgba(72, 91, 71, 0.8), rgba(72, 91, 71, 0.8)), 
     url(./assets/images/header/WoodTexture.png);
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
@@ -222,7 +215,6 @@ h6{
 }
 .sliderLine {
     width: 500%;
-    height: 473px;
     left: 0;
     display: flex;
     position: relative;
@@ -230,7 +222,6 @@ h6{
 }
 .sliderPage {
     width: 30%;
-    height: 473px;
 }
 .dot{
     width: 11px;
@@ -550,7 +541,7 @@ h6{
 /* First section */
 .main{
     margin: 0 auto;
-   width: 100%;
+    width: 100%;
 }
 
 .advantages {
@@ -590,7 +581,6 @@ h6{
 
     font-weight: 700;
     font-size: 30px;
-    line-height: 41px;
 }
 .advantagesTitle::before {
     content: '';
@@ -611,7 +601,6 @@ h6{
 
     font-weight: 400;
     font-size: 22px;
-    line-height: 30px;
     text-align: center;
 }
 .advantagesContainer {
@@ -729,7 +718,7 @@ h6{
     z-index: 0;
 
     background: linear-gradient(0deg, rgba(72, 91, 71, 0.8), rgba(72, 91, 71, 0.8)), url(./assets/images/header/WoodTexture.png);
-    background-repeat: no-repeat;
+
     background-position: center;
     background-size: cover;
 }
@@ -754,7 +743,6 @@ h6{
     
     font-weight: 700;
     font-size: 22px;
-    line-height: 30px;
 
     padding: 38px 35px 39px 39px;
     
@@ -787,7 +775,6 @@ h6{
     display: none;
 }
 .taskTitle {
-    font-style: normal;
     font-weight: 600;
     font-size: 23px;
     line-height: 31px;
@@ -799,9 +786,7 @@ h6{
 
     gap: 20px;
 
-    font-weight: 400;
     font-size: 20px;
-    line-height: 27px;
 }
 .taskList li  {
     margin-left: 56px;
@@ -1009,7 +994,6 @@ h6{
     position: relative;
 
     font-family: 'Roboto';
-    font-style: normal;
 
     color: var(--white);
 }
@@ -1563,7 +1547,6 @@ h6{
     
     font-weight: 700;
     font-size: 30px;
-    line-height: 41px;
 
     color: var(--white);
 }
@@ -1575,17 +1558,14 @@ h6{
     
     font-weight: 600;
     font-size: 30px;
-    line-height: 41px;
 
     color: var(--white);
-
 }
 .formText {
     margin-top: 18px;
 
     font-weight: 600;
     font-size: 20px;
-    line-height: 27px;
     text-align: center;
 
     color: var(--white);
@@ -1601,7 +1581,6 @@ h6{
     background-color: var(--white);
 }
 .formBtn {
-    height: 59px;
     width: 68%;
     margin: 18px auto;
 
@@ -1611,10 +1590,8 @@ h6{
     padding: 12px 44px 13px 44px;
 
     font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 600;
     font-size: 25px;
-    line-height: 34px;
 
     color: var(--white);
     background-color: var(--wooden);
@@ -1627,10 +1604,7 @@ h6{
     margin-bottom: 18px;
 }
 .formLabel {
-    font-style: normal;
-    font-weight: 400;
     font-size: 10px;
-    line-height: 14px;
     color: var(--white);
 }
 
@@ -1782,11 +1756,8 @@ h6{
     justify-content: flex-end;
     gap: 106px;
 
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    line-height: 33px;
-    
 }
 .footerImg {
     position: absolute;
